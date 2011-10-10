@@ -1,1 +1,291 @@
-/* normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */article,aside,details,figcaption,figure,footer,header,hgroup,nav,section{display:block}audio,canvas,video{display:inline-block;*display:inline;*zoom:1}audio:not([controls]),[hidden]{display:none}html{font-size:100%;overflow-y:scroll;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{margin:0;font-family:sans-serif}button,input,select,textarea{font-family:sans-serif}a{color:#00e}a:visited{color:#551a8b}a:focus{outline:thin dotted}a:hover,a:active{outline:0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}blockquote{margin:1em 40px}dfn{font-style:italic}mark{background:#ff0;color:#000}pre,code,kbd,samp{font-family:monospace,serif;_font-family:"courier new",monospace;font-size:1em}pre{white-space:pre;white-space:pre-wrap;word-wrap:break-word}q{quotes:none}q:before,q:after{content:"";content:none}small{font-size:75%}sub{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;top:-0.5em}sub{bottom:-0.25em}ul,ol{margin:1em 0;padding:0 0 0 40px}dd{margin:0 0 0 40px}nav ul,nav ol{list-style:none;list-style-image:none}img{border:0;-ms-interpolation-mode:bicubic}svg:not(:root){overflow:hidden}figure,form{margin:0}fieldset{margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;*margin-left:-7px}button,input,select,textarea{font-size:100%;margin:0;vertical-align:baseline;*vertical-align:middle}button,input{line-height:normal;*overflow:visible}table button,table input{*overflow:auto}button,html input[type="button"]{cursor:pointer;-webkit-appearance:button}input[type="reset"],input[type="submit"]{cursor:pointer;-webkit-appearance:button}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}html,body{margin:0;padding:0}body{font-size:16px;font-weight:300;font-family:Gill Sans,Trebuchet MS,sans-serif}#header-band{-moz-box-shadow:0px 2px 3px #999999;-webkit-box-shadow:0px 2px 3px #999999;-o-box-shadow:0px 2px 3px #999999;box-shadow:0px 2px 3px #999999;width:100%;height:36px;background:#f6a01a;z-index:99}#header{font-family:Gill Sans,Trebuchet MS,sans-serif;font-size:1.1em;height:36px;padding-top:0px;background:url(/images/ish-tag.png) 1000px center no-repeat}#header,#content{width:1020px;padding:0 30px;margin:0 auto}h1{width:570px;color:transparent;height:253.2px;background:url(/images/typeish-logo.png) center center no-repeat;display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto}h1{*display:inline}h2{font-size:0.8em;font-weight:300}#contact-form-flipper{width:420px;float:right;display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto}#contact-form-flipper{*display:inline}#contact-form-flipper button{font-size:21px;color:#fff;background-color:#f6a01a;border:0;font-weight:300;font-family:Gill Sans,Trebuchet MS,sans-serif;height:34px;cursor:pointer}#pitch{text-align:center;font-size:25px;padding-top:2.1em}#pitch p{text-shadow:0 0 1px #333333}#pitch button{width:180px}#contact{display:none}a,a:visited{text-decoration:none;color:#f6a01a}a:hover,a:visited:hover{color:#fff;background-color:#f6a01a;padding:0 2px;margin:0 -2px}ul{list-style-type:none;padding:0}#side-bar,#showcase{display:inline-block;vertical-align:top}#side-bar{width:270px;margin-right:29px;float:left}#side-bar p{font-size:0.8em;font-style:italic;color:#999}#team,#links{margin:0;width:120px;display:inline-block;vertical-align:top}#team a,#links a{font-weight:500;letter-spacing:1px}#links{float:right}#showcase{width:720px}#projects{width:724px;padding:0;margin:0}#projects td{height:88px;background:red;border-right:26px solid #fff;border-bottom:26px solid #fff}#projects td:last-child{border-right:0}#projects td.h2{height:202px}
+/* normalize.css 2011-08-12T17:28 UTC · http://github.com/necolas/normalize.css */
+/* ============================================================================= HTML5 display definitions ========================================================================== */
+/* Corrects block display not defined in IE6/7/8/9 & FF3 */
+/* line 12, _src/_normalize.sass */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+
+/* Corrects inline-block display not defined in IE6/7/8/9 & FF3 */
+/* line 18, _src/_normalize.sass */
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+
+/* Prevents modern browsers from displaying 'audio' without controls */
+/* line 26, _src/_normalize.sass */
+audio:not([controls]), [hidden] { display: none; }
+
+/* Addresses styling for 'hidden' attribute not present in IE7/8/9, FF3, S4 Known issue: no IE6 support */
+/* ============================================================================= Base ========================================================================== */
+/* 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 2. Keeps page centred in all browsers regardless of content height 3. Prevents iOS text size adjust after orientation change, without disabling user zoom www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+/* line 44, _src/_normalize.sass */
+html { font-size: 100%; /* 1 */ overflow-y: scroll; /* 2 */ -webkit-text-size-adjust: 100%; /* 3 */ -ms-text-size-adjust: 100%; /* 3 */ }
+
+/* Addresses margins handled incorrectly in IE6/7 */
+/* line 57, _src/_normalize.sass */
+body { margin: 0; font-family: sans-serif; }
+
+/* Addresses font-family inconsistency between 'textarea' and other form elements. */
+/* line 64, _src/_normalize.sass */
+button, input, select, textarea { font-family: sans-serif; }
+
+/* ============================================================================= Links ========================================================================== */
+/* line 71, _src/_normalize.sass */
+a { color: #00e; }
+/* line 73, _src/_normalize.sass */
+a:visited { color: #551a8b; }
+/* line 75, _src/_normalize.sass */
+a:focus { outline: thin dotted; }
+/* line 77, _src/_normalize.sass */
+a:hover, a:active { outline: 0; }
+
+/* Addresses outline displayed oddly in Chrome */
+/* Improves readability when focused and also mouse hovered in all browsers people.opera.com/patrickl/experiments/keyboard/test */
+/* ============================================================================= Typography ========================================================================== */
+/* Addresses styling not present in IE7/8/9, S5, Chrome */
+/* line 94, _src/_normalize.sass */
+abbr[title] { border-bottom: 1px dotted; }
+
+/* Addresses style set to 'bolder' in FF3/4, S4/5, Chrome */
+/* line 100, _src/_normalize.sass */
+b, strong { font-weight: bold; }
+
+/* line 103, _src/_normalize.sass */
+blockquote { margin: 1em 40px; }
+
+/* Addresses styling not present in S5, Chrome */
+/* line 109, _src/_normalize.sass */
+dfn { font-style: italic; }
+
+/* Addresses styling not present in IE6/7/8/9 */
+/* line 115, _src/_normalize.sass */
+mark { background: #ff0; color: #000; }
+
+/* Corrects font family set oddly in IE6, S4/5, Chrome en.wikipedia.org/wiki/User:Davidgothberg/Test59 */
+/* line 123, _src/_normalize.sass */
+pre, code, kbd, samp { font-family: monospace,serif; _font-family: "courier new",monospace; font-size: 1em; }
+
+/* Improves readability of pre-formatted text in all browsers */
+/* line 131, _src/_normalize.sass */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+/* 1. Addresses CSS quotes not supported in IE6/7 2. Addresses quote property not supported in S4 */
+/* 1 */
+/* line 142, _src/_normalize.sass */
+q { quotes: none; }
+/* line 144, _src/_normalize.sass */
+q:before, q:after { content: ""; content: none; }
+
+/* 2 */
+/* line 150, _src/_normalize.sass */
+small { font-size: 75%; }
+
+/* Prevents sub and sup affecting line-height in all browsers gist.github.com/413930 */
+/* line 157, _src/_normalize.sass */
+sub { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+
+/* line 163, _src/_normalize.sass */
+sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; top: -0.5em; }
+
+/* line 170, _src/_normalize.sass */
+sub { bottom: -0.25em; }
+
+/* ============================================================================= Lists ========================================================================== */
+/* line 177, _src/_normalize.sass */
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+
+/* line 181, _src/_normalize.sass */
+dd { margin: 0 0 0 40px; }
+
+/* line 185, _src/_normalize.sass */
+nav ul, nav ol { list-style: none; list-style-image: none; }
+
+/* ============================================================================= Embedded content ========================================================================== */
+/* 1. Removes border when inside 'a' element in IE6/7/8/9 2. Improves image quality when scaled in IE7 code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/ */
+/* line 198, _src/_normalize.sass */
+img { border: 0; /* 1 */ -ms-interpolation-mode: bicubic; /* 2 */ }
+
+/* Corrects overflow displayed oddly in IE9 */
+/* line 207, _src/_normalize.sass */
+svg:not(:root) { overflow: hidden; }
+
+/* ============================================================================= Figures ========================================================================== */
+/* Addresses margin not present in IE6/7/8/9, S5, O11 */
+/* line 217, _src/_normalize.sass */
+figure, form { margin: 0; }
+
+/* ============================================================================= Forms ========================================================================== */
+/* Corrects margin displayed oddly in IE6/7 */
+/* Define consistent margin and padding */
+/* line 230, _src/_normalize.sass */
+fieldset { margin: 0 2px; padding: 0.35em 0.625em 0.75em; }
+
+/* 1. Corrects color not being inherited in IE6/7/8/9 2. Corrects alignment displayed oddly in IE6/7 */
+/* line 238, _src/_normalize.sass */
+legend { border: 0; /* 1 */ *margin-left: -7px; /* 2 */ }
+
+/* 1. Corrects font size not being inherited in all browsers 2. Addresses margins set differently in IE6/7, F3/4, S5, Chrome 3. Improves appearance and consistency in all browsers */
+/* line 249, _src/_normalize.sass */
+button, input, select, textarea { font-size: 100%; /* 1 */ margin: 0; /* 2 */ vertical-align: baseline; /* 3 */ *vertical-align: middle; /* 3 */ }
+
+/* 1. Addresses FF3/4 setting line-height using !important in the UA stylesheet 2. Corrects inner spacing displayed oddly in IE6/7 */
+/* line 263, _src/_normalize.sass */
+button, input { line-height: normal; /* 1 */ *overflow: visible; /* 2 */ }
+
+/* Corrects overlap and whitespace issue for buttons and inputs in IE6/7 Known issue: reintroduces inner spacing */
+/* line 274, _src/_normalize.sass */
+table button, table input { *overflow: auto; }
+
+/* 1. Improves usability and consistency of cursor style between image-type 'input' and others 2. Corrects inability to style clickable 'input' types in iOS */
+/* line 281, _src/_normalize.sass */
+button, html input[type="button"] { cursor: pointer; /* 1 */ -webkit-appearance: button; /* 2 */ }
+
+/* line 288, _src/_normalize.sass */
+input[type="reset"], input[type="submit"] { cursor: pointer; /* 1 */ -webkit-appearance: button; /* 2 */ }
+/* line 293, _src/_normalize.sass */
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; /* 1 */ padding: 0; /* 2 */ }
+/* line 298, _src/_normalize.sass */
+input[type="search"] { -webkit-appearance: textfield; /* 1 */ -moz-box-sizing: content-box; -webkit-box-sizing: content-box; /* 2 */ box-sizing: content-box; }
+/* line 305, _src/_normalize.sass */
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/* 1. Addresses box sizing set to content-box in IE8/9 2. Addresses excess padding in IE8/9 */
+/* 1. Addresses appearance set to searchfield in S5, Chrome 2. Addresses box sizing set to border-box in S5, Chrome (include -moz to future-proof) */
+/* Corrects inner padding displayed oddly in S5, Chrome on OSX */
+/* Corrects inner padding and border displayed oddly in FF3/4 www.sitepen.com/blog/2008/05/14/the-devils-in-the-details-fixing-dojos-toolbar-buttons/ */
+/* line 323, _src/_normalize.sass */
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+
+/* 1. Removes default vertical scrollbar in IE6/7/8/9 2. Improves readability and alignment in all browsers */
+/* line 331, _src/_normalize.sass */
+textarea { overflow: auto; /* 1 */ vertical-align: top; /* 2 */ }
+
+/* ============================================================================= Tables ========================================================================== */
+/* Remove most spacing between table cells */
+/* line 344, _src/_normalize.sass */
+table { border-collapse: collapse; border-spacing: 0; }
+
+/* line 24, _src/screen.sass */
+html, body { margin: 0; padding: 0; }
+
+/* line 28, _src/screen.sass */
+body { font-size: 16px; font-weight: 300; font-family: Gill Sans, Trebuchet MS, sans-serif; }
+
+/* line 33, _src/screen.sass */
+#header-band { -moz-box-shadow: 0px 2px 3px #999999; -webkit-box-shadow: 0px 2px 3px #999999; -o-box-shadow: 0px 2px 3px #999999; box-shadow: 0px 2px 3px #999999; width: 100%; height: 36px; background: #f6a01a; z-index: 99; }
+
+/* line 40, _src/screen.sass */
+#header { font-family: Gill Sans, Trebuchet MS, sans-serif; font-size: 1.1em; height: 36px; padding-top: 0px; background: url(/images/ish-tag.png) 1000px center no-repeat; }
+
+/* line 48, _src/screen.sass */
+#header, #content { width: 1020px; padding: 0 30px; margin: 0 auto; }
+
+/* line 53, _src/screen.sass */
+h1 { width: 570px; color: transparent; height: 253.2px; background: url(/images/typeish-logo.png) center center no-repeat; display: -moz-inline-box; -moz-box-orient: vertical; display: inline-block; vertical-align: middle; *vertical-align: auto; margin: 50px 0; font-size: 0px; }
+/* line 7, ../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/css3/_inline-block.scss */
+h1 { *display: inline; }
+
+/* line 63, _src/screen.sass */
+h2 { font-size: 0.8em; font-weight: 300; }
+
+/* line 67, _src/screen.sass */
+button { cursor: pointer; height: 34px; -moz-transition-property: all; -webkit-transition-property: all; -o-transition-property: all; transition-property: all; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; -moz-transition-timing-function: linear; -webkit-transition-timing-function: linear; -o-transition-timing-function: linear; transition-timing-function: linear; color: white; background-color: #f6a01a; border: 0; font-weight: 300; font-family: Gill Sans, Trebuchet MS, sans-serif; font-size: 21px; height: 34px; }
+/* line 78, _src/screen.sass */
+button:hover { -moz-box-shadow: inset 0px 0px 3px #333333; -webkit-box-shadow: inset 0px 0px 3px #333333; -o-box-shadow: inset 0px 0px 3px #333333; box-shadow: inset 0px 0px 3px #333333; }
+/* line 80, _src/screen.sass */
+button:active { -moz-box-shadow: inset 0px 0px 6px #333333; -webkit-box-shadow: inset 0px 0px 6px #333333; -o-box-shadow: inset 0px 0px 6px #333333; box-shadow: inset 0px 0px 6px #333333; }
+
+/* line 83, _src/screen.sass */
+#work-with-us { display: none; }
+
+/* line 86, _src/screen.sass */
+#pitch, #contact { -moz-transition-property: all; -webkit-transition-property: all; -o-transition-property: all; transition-property: all; -moz-transition-duration: 0.6s; -webkit-transition-duration: 0.6s; -o-transition-duration: 0.6s; transition-duration: 0.6s; -moz-transition-timing-function: linear; -webkit-transition-timing-function: linear; -o-transition-timing-function: linear; transition-timing-function: linear; position: absolute; top: 0; left: 0; -webkit-backface-visibility: hidden; backface-visibility: hidden; }
+
+/* line 93, _src/screen.sass */
+#pitch { text-align: center; font-size: 25px; padding-top: 90px; left: 48px; }
+/* line 98, _src/screen.sass */
+#pitch p { text-shadow: 0 0 1px #333333; }
+/* line 100, _src/screen.sass */
+#pitch button { width: 180px; }
+
+/* line 103, _src/screen.sass */
+#contact { -moz-transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -o-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); }
+
+/* line 106, _src/screen.sass */
+#flip-container { width: 420px; display: inline-block; vertical-align: top; position: relative; -webkit-perspective: 1000; perspective: 1000; z-index: 2; }
+/* line 114, _src/screen.sass */
+#flip-container.flip #pitch { -moz-transform: rotateY(180deg); -webkit-transform: rotateY(180deg); -o-transform: rotateY(180deg); -ms-transform: rotateY(180deg); transform: rotateY(180deg); }
+/* line 116, _src/screen.sass */
+#flip-container.flip #contact { -moz-transform: rotateY(360deg); -webkit-transform: rotateY(360deg); -o-transform: rotateY(360deg); -ms-transform: rotateY(360deg); transform: rotateY(360deg); }
+/* line 119, _src/screen.sass */
+#flip-container.show #pitch { display: none; }
+/* line 121, _src/screen.sass */
+#flip-container.show #contact { display: block; -moz-transform: rotateY(0deg); -webkit-transform: rotateY(0deg); -o-transform: rotateY(0deg); -ms-transform: rotateY(0deg); transform: rotateY(0deg); }
+
+/* line 128, _src/screen.sass */
+#contact { top: 94px; left: 36px; }
+/* line 131, _src/screen.sass */
+#contact input, #contact textarea { font-family: Gill Sans, Trebuchet MS, sans-serif; font-weight: 300; border: 1px solid transparent; padding: 0.5em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; width: 420px; -moz-box-shadow: inset 0px 0px 3px #999999; -webkit-box-shadow: inset 0px 0px 3px #999999; -o-box-shadow: inset 0px 0px 3px #999999; box-shadow: inset 0px 0px 3px #999999; }
+/* line 139, _src/screen.sass */
+#contact input:hover, #contact textarea:hover { -moz-box-shadow: inset 0px 0px 3px #333333; -webkit-box-shadow: inset 0px 0px 3px #333333; -o-box-shadow: inset 0px 0px 3px #333333; box-shadow: inset 0px 0px 3px #333333; }
+/* line 141, _src/screen.sass */
+#contact input:focus, #contact textarea:focus { -moz-box-shadow: inset 0px 0px 3px #f6a01a; -webkit-box-shadow: inset 0px 0px 3px #f6a01a; -o-box-shadow: inset 0px 0px 3px #f6a01a; box-shadow: inset 0px 0px 3px #f6a01a; outline: 0; border-color: transparent; }
+/* line 145, _src/screen.sass */
+#contact input.pf-error, #contact textarea.pf-error { -moz-box-shadow: inset 0px 0px 3px red; -webkit-box-shadow: inset 0px 0px 3px red; -o-box-shadow: inset 0px 0px 3px red; box-shadow: inset 0px 0px 3px red; }
+/* line 147, _src/screen.sass */
+#contact textarea { height: 72px; max-width: 420px; margin-top: 5px; }
+/* line 151, _src/screen.sass */
+#contact button { float: right; margin-top: 10px; }
+/* line 154, _src/screen.sass */
+#contact span { font-weight: 300; }
+/* line 156, _src/screen.sass */
+#contact span.pf-error { color: red; }
+/* line 158, _src/screen.sass */
+#contact #pf-contact-sender-status { left: 1px; top: 38px; }
+/* line 161, _src/screen.sass */
+#contact #pf-contact-general-status { margin-top: 5px; margin-left: 1px; display: block; }
+/* line 165, _src/screen.sass */
+#contact img#pf-contact-spinner { float: right; margin: 20px 10px 0 0; }
+/* line 168, _src/screen.sass */
+#contact #pf-contact-sender-status, #contact #pf-contact-subject-status { position: absolute; }
+/* line 170, _src/screen.sass */
+#contact input#pf-contact-subject, #contact #pf-contact-subject-status { display: none; }
+
+/* line 179, _src/screen.sass */
+a, a:visited { text-decoration: none; color: #f6a01a; }
+/* line 182, _src/screen.sass */
+a:hover, a:visited:hover { color: white; background-color: #f6a01a; padding: 0 2px; margin: 0 -2px; }
+
+/* line 187, _src/screen.sass */
+ul { list-style-type: none; padding: 0; }
+
+/* line 191, _src/screen.sass */
+#side-bar, #showcase { display: inline-block; vertical-align: top; }
+
+/* line 195, _src/screen.sass */
+#side-bar { width: 270px; margin-right: 29px; float: left; }
+/* line 199, _src/screen.sass */
+#side-bar p { font-size: 0.8em; font-style: italic; clear: both; color: #999999; }
+
+/* line 205, _src/screen.sass */
+#team, #links { margin: 0 0 1em; width: 120px; display: inline-block; vertical-align: top; }
+/* line 210, _src/screen.sass */
+#team a, #links a { font-weight: 500; letter-spacing: 1px; }
+
+/* line 214, _src/screen.sass */
+#team { float: left; }
+
+/* line 217, _src/screen.sass */
+#links { float: right; }
+
+/* line 222, _src/screen.sass */
+#showcase { width: 720px; position: relative; }
+
+/* line 225, _src/screen.sass */
+#projects { width: 724px; padding: 0; margin: 0; }
+/* line 232, _src/screen.sass */
+#projects td { height: 88px; width: 224px; background: red; border-right: 26px solid white; border-bottom: 26px solid white; }
+/* line 238, _src/screen.sass */
+#projects td:last-child { border-right: 0; }
+/* line 240, _src/screen.sass */
+#projects td.h2 { height: 202px; }
+
+/* line 243, _src/screen.sass */
+#project-detail { position: absolute; top: 0; left: 0; width: 120%; height: 100%; margin-top: 2em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; background: rgba(255, 255, 255, 0.9); }
