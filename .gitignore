@@ -1,0 +1,31 @@
+syntax: glob
+
+deploy/
+deploy_tmp/
+
+# Miscellaneous
+.livereload
+.sass-cache
+*.bak
+*.db
+*.kpf
+*.log
+*.old
+*.pyc
+*.swp
+*.swo
+*~
+
+# Whoosh files
+*.dci
+*.dcz
+*.tiz
+*.toc
+
+# Mac stuff
+.DS_Store
+
+# other scm
+.svn
+.CVS
+.hg*

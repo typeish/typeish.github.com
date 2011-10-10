@@ -1,0 +1,149 @@
+@import "normalize"
+@import "compass/css3"
+
+$typeish_orange         : #F6A01A
+$typeish_orange_light   : #FDE8C6
+$text_color             : black
+$background_color       : white
+
+$font_sans1 : Gill Sans, Trebuchet MS, sans-serif
+$font_sans2 : Lucida Grande, Corbel, Verdana, sans-serif
+
+
+$max_width  : 1024px
+$page_cols  : 7
+$col        : 120px
+$gutter     : 30px
+
+
+
+=cols($num_cols:1)
+    width: $num_cols * $col + ($num_cols - 1) * $gutter
+
+
+html, body
+    margin: 0
+    padding: 0
+
+body
+    font-size: 16px
+    font-weight: 300
+    font-family: $font_sans1
+
+#header-band
+    +box-shadow(#999, 0px, 2px, 3px)
+    width: 100%
+    height: 36px
+    background: $typeish_orange
+    z-index: 99
+
+#header
+    font-family: Gill Sans, Trebuchet MS, sans-serif
+    font-size: 1.1em
+    height: 36px
+    padding-top: 0px
+    $num_cols: 7
+    background: url(/images/ish-tag.png) ($num_cols * $col + ($num_cols - 1) * $gutter - 20px) center no-repeat
+
+#header, #content
+    +cols(7)
+    padding: 0 $gutter
+    margin: 0 auto
+
+h1
+    $num_cols: 4
+    +cols($num_cols)
+    color: transparent
+    height: 0.34 * $num_cols * $col + ($num_cols - 1) * $gutter
+    background: url(/images/typeish-logo.png) center center no-repeat
+    +inline-block
+
+h2
+    font-size: 0.8em
+    font-weight: 300
+
+#contact-form-flipper
+    +cols(3)
+    float: right
+    +inline-block
+    button
+        font-size: 21px
+        color: $background_color
+        background-color: $typeish_orange
+        border: 0
+        font-weight: 300
+        font-family: $font_sans1
+        height: 34px
+        cursor: pointer
+
+#pitch
+    text-align: center
+    font-size: 25px
+    padding-top: 2.1em
+    p
+        +single-text-shadow(0,0,1px,#333)
+    button
+        width: 180px
+
+#contact
+    display: none
+
+
+
+a, a:visited
+    text-decoration: none
+    color: $typeish_orange
+    &:hover
+        color: $background_color
+        background-color: $typeish_orange
+        padding: 0 2px
+        margin: 0 -2px
+ul
+    list-style-type: none
+    padding: 0
+
+#side-bar, #showcase
+    display: inline-block
+    vertical-align: top
+
+#side-bar
+    +cols(2)
+    margin-right: $gutter - 1
+    float: left
+    p
+        font-size: 0.8em
+        font-style: italic
+        color: #999
+
+#team, #links
+    margin: 0
+    +cols
+    display: inline-block
+    vertical-align: top
+    a
+        font-weight: 500
+        letter-spacing: 1px
+
+#links
+    float: right
+
+//224x26
+//88 height
+#showcase
+    +cols(5)
+#projects
+    $g_w: 224px
+    $g_h: 88px
+    $g_g: 26px
+    width: $g_w * 3 + $g_g * 2
+    padding: 0
+    margin: 0
+    td
+        height: $g_h
+        background: red
+        border-right: $g_g solid $background_color
+        border-bottom: $g_g solid $background_color
+        &:last-child
+            border-right: 0
+        &.h2
+            height: $g_h * 2 + $g_g * 1
