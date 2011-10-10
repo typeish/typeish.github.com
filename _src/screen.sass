@@ -151,6 +151,7 @@ button
     button
         float: right
         margin-top: 10px
+        padding: 0 10px
     span
         font-weight: 300
         &.pf-error
@@ -235,12 +236,21 @@ ul
         background: red
         border-right: $g_g solid $background_color
         border-bottom: $g_g solid $background_color
-        &:last-child
+        color: transparent
+        opacity: 0.5
+        +single-transition(opacity, 0.3s, linear)
+        &:hover
+            opacity: 1
+        &.last
             border-right: 0
         &.h2
             height: $g_h * 2 + $g_g * 1
+        @each $proj in gatherers, themwh, sabeus, allforlocal
+            &[name="#{ $proj }"]
+                background: url(/images/projects/#{ $proj }.png)
 
 #project-detail
+    display: none // Shown using CSS
     position: absolute
     top: 0
     left: 0

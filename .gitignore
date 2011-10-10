@@ -29,3 +29,4 @@ deploy_tmp/
 .svn
 .CVS
 .hg*
+develop.sh
