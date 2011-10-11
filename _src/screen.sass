@@ -94,7 +94,7 @@ button
     text-align: center
     font-size: 25px
     padding-top: 90px
-    left: 48px
+    left: 70px
     p
         +single-text-shadow(0,0,1px,#333)
     button
@@ -180,6 +180,10 @@ button
 a, a:visited
     text-decoration: none
     color: $typeish_orange
+    +transition-property(background-color)
+    +transition-property(color)
+    +transition-duration(0.1s)
+    +transition-timing-function(linear)
     &:hover
         color: $background_color
         background-color: $typeish_orange
@@ -230,32 +234,63 @@ ul
     width: $g_w * 3 + $g_g * 2
     padding: 0
     margin: 0
+    position: relative
+    z-index: 2
     td
         height: $g_h
         width: $g_w
-        background: red
         border-right: $g_g solid $background_color
         border-bottom: $g_g solid $background_color
         color: transparent
-        opacity: 0.5
-        +single-transition(opacity, 0.3s, linear)
-        &:hover
-            opacity: 1
         &.last
             border-right: 0
         &.h2
             height: $g_h * 2 + $g_g * 1
-        @each $proj in gatherers, themwh, sabeus, allforlocal
+
+        // Hover effects
+        opacity: 0.5
+        +single-transition(opacity, 0.2s, linear)
+        cursor: pointer
+        &:hover
+            opacity: 1
+
+        // Project images
+        @each $proj in greasebros, gatherers, themwh, sabeus, allforlocal
             &[name="#{ $proj }"]
-                background: url(/images/projects/#{ $proj }.png)
+                background: url(/images/projects/#{ $proj }.png) center center no-repeat
 
 #project-detail
-    display: none // Shown using CSS
     position: absolute
+    z-index: 1
+    opacity: 0
     top: 0
     left: 0
-    width: 120%
-    height: 100%
-    margin-top: 2em
+    width: 101%
+    height: 101%
     +box-sizing(border-box)
-    background: rgba(255,255,255,0.9)
+    background: $background_color
+    +single-transition(opacity, 0.2s, linear)
+    & > div
+        clear: both
+        padding-bottom: 10px
+    button
+        float: left
+        background: transparent
+        color: black
+        font-size: 0.8em
+        font-weight: 300
+        &:hover
+            +single-box-shadow($color: transparent)
+            color: $typeish_orange
+    img
+        display: inline-block
+        vertical-align: top
+    .logo
+    .screenshot
+        margin-right: 26px
+        border: 1px solid #ccc
+        float: right
+    p
+        width: 224px
+    a
+        font-weight: 400
