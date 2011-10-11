@@ -183,7 +183,7 @@ h1 { width: 570px; color: transparent; height: 253.2px; background: url(/images/
 h1 { *display: inline; }
 
 /* line 63, _src/screen.sass */
-h2 { font-size: 0.8em; font-weight: 300; }
+h2 { font-size: 1em; font-weight: 300; }
 
 /* line 67, _src/screen.sass */
 button { cursor: pointer; height: 34px; -moz-transition-property: all; -webkit-transition-property: all; -o-transition-property: all; transition-property: all; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; -moz-transition-timing-function: linear; -webkit-transition-timing-function: linear; -o-transition-timing-function: linear; transition-timing-function: linear; color: white; background-color: #f6a01a; border: 0; font-weight: 300; font-family: Gill Sans, Trebuchet MS, sans-serif; font-size: 21px; height: 34px; }
@@ -222,7 +222,7 @@ button:active { -moz-box-shadow: inset 0px 0px 6px #333333; -webkit-box-shadow: 
 /* line 128, _src/screen.sass */
 #contact { top: 94px; left: 36px; }
 /* line 131, _src/screen.sass */
-#contact input, #contact textarea { font-family: Gill Sans, Trebuchet MS, sans-serif; font-weight: 300; border: 1px solid transparent; padding: 0.5em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; width: 420px; -moz-box-shadow: inset 0px 0px 3px #999999; -webkit-box-shadow: inset 0px 0px 3px #999999; -o-box-shadow: inset 0px 0px 3px #999999; box-shadow: inset 0px 0px 3px #999999; }
+#contact input, #contact textarea { font-family: Gill Sans, Trebuchet MS, sans-serif; font-weight: 300; border: 1px solid transparent; padding: 0.5em; width: 410px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; -moz-box-shadow: inset 0px 0px 3px #999999; -webkit-box-shadow: inset 0px 0px 3px #999999; -o-box-shadow: inset 0px 0px 3px #999999; box-shadow: inset 0px 0px 3px #999999; }
 /* line 139, _src/screen.sass */
 #contact input:hover, #contact textarea:hover { -moz-box-shadow: inset 0px 0px 3px #333333; -webkit-box-shadow: inset 0px 0px 3px #333333; -o-box-shadow: inset 0px 0px 3px #333333; box-shadow: inset 0px 0px 3px #333333; }
 /* line 141, _src/screen.sass */
@@ -230,88 +230,92 @@ button:active { -moz-box-shadow: inset 0px 0px 6px #333333; -webkit-box-shadow: 
 /* line 145, _src/screen.sass */
 #contact input.pf-error, #contact textarea.pf-error { -moz-box-shadow: inset 0px 0px 3px red; -webkit-box-shadow: inset 0px 0px 3px red; -o-box-shadow: inset 0px 0px 3px red; box-shadow: inset 0px 0px 3px red; }
 /* line 147, _src/screen.sass */
-#contact textarea { height: 72px; max-width: 420px; margin-top: 5px; }
-/* line 151, _src/screen.sass */
+#contact textarea { height: 72px; max-width: 410px; min-width: 410px; margin-top: 5px; }
+/* line 152, _src/screen.sass */
 #contact button { float: right; margin-top: 10px; padding: 0 10px; }
-/* line 155, _src/screen.sass */
+/* line 156, _src/screen.sass */
 #contact span { font-weight: 300; }
-/* line 157, _src/screen.sass */
+/* line 158, _src/screen.sass */
 #contact span.pf-error { color: red; }
-/* line 159, _src/screen.sass */
+/* line 160, _src/screen.sass */
 #contact #pf-contact-sender-status { left: 1px; top: 38px; }
-/* line 162, _src/screen.sass */
+/* line 163, _src/screen.sass */
 #contact #pf-contact-general-status { margin-top: 5px; margin-left: 1px; display: block; }
-/* line 166, _src/screen.sass */
+/* line 167, _src/screen.sass */
 #contact img#pf-contact-spinner { float: right; margin: 20px 10px 0 0; }
-/* line 169, _src/screen.sass */
+/* line 170, _src/screen.sass */
 #contact #pf-contact-sender-status, #contact #pf-contact-subject-status { position: absolute; }
-/* line 171, _src/screen.sass */
+/* line 172, _src/screen.sass */
 #contact input#pf-contact-subject, #contact #pf-contact-subject-status { display: none; }
+/* line 181, _src/screen.sass */
+#contact button#cancel-contact { float: left; color: black; background-color: transparent; font-size: 0.9em; position: absolute; left: -8px; bottom: -5px; }
+/* line 189, _src/screen.sass */
+#contact button#cancel-contact:hover { color: #f6a01a; -moz-box-shadow: 0px 0px 5px transparent; -webkit-box-shadow: 0px 0px 5px transparent; -o-box-shadow: 0px 0px 5px transparent; box-shadow: 0px 0px 5px transparent; }
 
-/* line 180, _src/screen.sass */
+/* line 194, _src/screen.sass */
 a, a:visited { text-decoration: none; color: #f6a01a; -moz-transition-property: background-color; -webkit-transition-property: background-color; -o-transition-property: background-color; transition-property: background-color; -moz-transition-property: color; -webkit-transition-property: color; -o-transition-property: color; transition-property: color; -moz-transition-duration: 0.1s; -webkit-transition-duration: 0.1s; -o-transition-duration: 0.1s; transition-duration: 0.1s; -moz-transition-timing-function: linear; -webkit-transition-timing-function: linear; -o-transition-timing-function: linear; transition-timing-function: linear; }
-/* line 187, _src/screen.sass */
+/* line 201, _src/screen.sass */
 a:hover, a:visited:hover { color: white; background-color: #f6a01a; padding: 0 2px; margin: 0 -2px; }
 
-/* line 192, _src/screen.sass */
+/* line 206, _src/screen.sass */
 ul { list-style-type: none; padding: 0; }
 
-/* line 196, _src/screen.sass */
+/* line 210, _src/screen.sass */
 #side-bar, #showcase { display: inline-block; vertical-align: top; }
 
-/* line 200, _src/screen.sass */
+/* line 214, _src/screen.sass */
 #side-bar { width: 270px; margin-right: 29px; float: left; }
-/* line 204, _src/screen.sass */
+/* line 218, _src/screen.sass */
 #side-bar p { font-size: 0.8em; font-style: italic; clear: both; color: #999999; }
 
-/* line 210, _src/screen.sass */
+/* line 224, _src/screen.sass */
 #team, #links { margin: 0 0 1em; width: 120px; display: inline-block; vertical-align: top; }
-/* line 215, _src/screen.sass */
+/* line 229, _src/screen.sass */
 #team a, #links a { font-weight: 500; letter-spacing: 1px; }
 
-/* line 219, _src/screen.sass */
+/* line 233, _src/screen.sass */
 #team { float: left; }
 
-/* line 222, _src/screen.sass */
+/* line 236, _src/screen.sass */
 #links { float: right; }
 
-/* line 227, _src/screen.sass */
+/* line 241, _src/screen.sass */
 #showcase { width: 720px; position: relative; }
 
-/* line 230, _src/screen.sass */
+/* line 244, _src/screen.sass */
 #projects { width: 724px; padding: 0; margin: 0; position: relative; z-index: 2; }
-/* line 239, _src/screen.sass */
+/* line 253, _src/screen.sass */
 #projects td { height: 88px; width: 224px; border-right: 26px solid white; border-bottom: 26px solid white; color: transparent; opacity: 0.5; -moz-transition-property: opacity; -webkit-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; -moz-transition-timing-function: linear; -webkit-transition-timing-function: linear; -o-transition-timing-function: linear; transition-timing-function: linear; cursor: pointer; }
-/* line 245, _src/screen.sass */
+/* line 259, _src/screen.sass */
 #projects td.last { border-right: 0; }
-/* line 247, _src/screen.sass */
+/* line 261, _src/screen.sass */
 #projects td.h2 { height: 202px; }
-/* line 254, _src/screen.sass */
+/* line 268, _src/screen.sass */
 #projects td:hover { opacity: 1; }
-/* line 259, _src/screen.sass */
+/* line 273, _src/screen.sass */
 #projects td[name="greasebros"] { background: url(/images/projects/greasebros.png) center center no-repeat; }
-/* line 259, _src/screen.sass */
+/* line 273, _src/screen.sass */
 #projects td[name="gatherers"] { background: url(/images/projects/gatherers.png) center center no-repeat; }
-/* line 259, _src/screen.sass */
+/* line 273, _src/screen.sass */
 #projects td[name="themwh"] { background: url(/images/projects/themwh.png) center center no-repeat; }
-/* line 259, _src/screen.sass */
+/* line 273, _src/screen.sass */
 #projects td[name="sabeus"] { background: url(/images/projects/sabeus.png) center center no-repeat; }
-/* line 259, _src/screen.sass */
+/* line 273, _src/screen.sass */
 #projects td[name="allforlocal"] { background: url(/images/projects/allforlocal.png) center center no-repeat; }
 
-/* line 262, _src/screen.sass */
-#project-detail { position: absolute; z-index: 1; opacity: 0; top: 0; left: 0; width: 101%; height: 101%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; background: white; -moz-transition-property: opacity; -webkit-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; -moz-transition-timing-function: linear; -webkit-transition-timing-function: linear; -o-transition-timing-function: linear; transition-timing-function: linear; }
-/* line 273, _src/screen.sass */
-#project-detail > div { clear: both; padding-bottom: 10px; }
 /* line 276, _src/screen.sass */
-#project-detail button { float: left; background: transparent; color: black; font-size: 0.8em; font-weight: 300; }
-/* line 282, _src/screen.sass */
+#project-detail { position: absolute; z-index: 1; opacity: 0; top: 0; left: 0; width: 101%; height: 101%; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; box-sizing: border-box; background: white; -moz-transition-property: opacity; -webkit-transition-property: opacity; -o-transition-property: opacity; transition-property: opacity; -moz-transition-duration: 0.2s; -webkit-transition-duration: 0.2s; -o-transition-duration: 0.2s; transition-duration: 0.2s; -moz-transition-timing-function: linear; -webkit-transition-timing-function: linear; -o-transition-timing-function: linear; transition-timing-function: linear; }
+/* line 287, _src/screen.sass */
+#project-detail > div { clear: both; padding-bottom: 10px; }
+/* line 290, _src/screen.sass */
+#project-detail button { float: left; background: transparent; color: black; font-size: 1em; font-weight: 300; margin-top: 6px; margin-bottom: 4px; }
+/* line 298, _src/screen.sass */
 #project-detail button:hover { -moz-box-shadow: 0px 0px 5px transparent; -webkit-box-shadow: 0px 0px 5px transparent; -o-box-shadow: 0px 0px 5px transparent; box-shadow: 0px 0px 5px transparent; color: #f6a01a; }
-/* line 285, _src/screen.sass */
+/* line 301, _src/screen.sass */
 #project-detail img { display: inline-block; vertical-align: top; }
-/* line 289, _src/screen.sass */
+/* line 305, _src/screen.sass */
 #project-detail .screenshot { margin-right: 26px; border: 1px solid #cccccc; float: right; }
-/* line 293, _src/screen.sass */
+/* line 309, _src/screen.sass */
 #project-detail p { width: 224px; }
-/* line 295, _src/screen.sass */
+/* line 311, _src/screen.sass */
 #project-detail a { font-weight: 400; }
