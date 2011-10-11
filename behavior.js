@@ -80,7 +80,7 @@
     $('#projects td').click(function() {
       var $this, project_name;
       $this = $(this);
-      project_name = $this.attr('name');
+      project_name = $this.attr('id');
       project_info_container.html(renderProject(project_name));
       return project_detail_el.css({
         'z-index': 3,

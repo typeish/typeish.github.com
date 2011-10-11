@@ -124,7 +124,7 @@ $(document).ready ->
     project_info_container = project_detail_el.find('div')
     $('#projects td').click ->
         $this = $(this)
-        project_name = $this.attr('name')
+        project_name = $this.attr('id')
         project_info_container.html(renderProject(project_name))
         project_detail_el.css
             'z-index': 3

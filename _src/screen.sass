@@ -270,7 +270,7 @@ ul
 
         // Project images
         @each $proj in greasebros, gatherers, themwh, sabeus, allforlocal
-            &[name="#{ $proj }"]
+            &##{ $proj }
                 background: url(/images/projects/#{ $proj }.png) center center no-repeat
 
 #project-detail
