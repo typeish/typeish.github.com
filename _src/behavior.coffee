@@ -78,3 +78,4 @@ $(document).ready ->
     # Show the "Work with us" button (hidden by CSS in case JS fails to load).
     wwu_button.show()
 
+    window['scrollTo'](0, 1)

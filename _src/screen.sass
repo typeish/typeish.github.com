@@ -32,6 +32,7 @@ body
     font-weight: 300
     font-family: $font_sans1
     //min-width: 884px
+    min-height: 1000px
 
 #header-band
     +single-box-shadow(#999, 0px, 2px, 3px)
@@ -72,6 +73,8 @@ h1
         max-width: 100%
         width: 100%
         margin: 50px auto
+    @media (max-width: 600px)
+        margin-bottom: 10px
 
 
 h2
@@ -116,7 +119,7 @@ button
         padding-top: 0
         width: 100%
     p
-        +single-text-shadow(0,0,1px,#333)
+        +single-text-shadow(0,0,1px,rgb(100,100,100))
     button
         width: 180px
 

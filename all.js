@@ -73,6 +73,7 @@ a.sender=jQuery("#pf-contact-sender");a.sender_status=jQuery("#pf-contact-sender
       contact_el.hide();
     }
     initPigeonFarm();
-    return wwu_button.show();
+    wwu_button.show();
+    return window['scrollTo'](0, 1);
   });
 }).call(this);
