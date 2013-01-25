@@ -32,7 +32,7 @@ initPigeonFarm = ->
     # Init the Pigeon Farm contact form.
     # http://github.com/typeish/pigeonfarm
     PigeonFarm
-        server          : 'http://pigeonfarm.net'
+        server          : 'http://pigeon-farm.appspot.com'
         site            : 'typeish.net'
         key             : '0f2eb1ac-c719-4bee-92bd-85c784220256'
         container       : '#contact'

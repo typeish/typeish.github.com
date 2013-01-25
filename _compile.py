@@ -24,4 +24,4 @@ file('all.js','w').write(data)
 
 print 'concatenated'
 
-print commands.getoutput('closure --js_output_file all-min.js --js all.js')
+print commands.getoutput('closure-compiler --js_output_file all-min.js --js all.js')
